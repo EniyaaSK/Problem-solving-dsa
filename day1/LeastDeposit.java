@@ -1,3 +1,6 @@
+package  day1;
+
+
 import java.util.Scanner;
 
 public class LeastDeposit{
@@ -10,7 +13,7 @@ public class LeastDeposit{
         System.out.println("Amount to be deposited");
         cash=sc.nextInt();
         if(cash<=least){
-            least=cash;
+            least=cash; 
             token--;
         }
         
