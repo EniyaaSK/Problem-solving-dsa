@@ -1,0 +1,518 @@
+Problem Solving (CSE):
+https://github.com/razzaksr/PST-Intern-CSE-2025
+
+Structures:
+	array, list, set, map, graph, tree
+Algorithms:
+	sliding window, greedy, divide and conquer, dynamic programming
+
+System Design - Low Level Design:
+
+Complexity: time , space >> O()
+Problems/ Use case:
+
+Data			>> 
+Operations	>> 
+
+
+Day 1:
+1. Consider the group of deposits done by bank today with numbers and manager wants to find out the least deposit. so assist the manager by providing solution to identify the least deposit.
+
+2. In the given list contains the 10 tax payers of financial year 2024-2025, among the auditor wants to find the first and second highest tax payer. so find the solution to support the auditor.
+
+Day 2:
+1. In the super market end of each day finding the raised bills to customer with invoice number, now find the missing invoice of the day.
+Example:
+Input:
+8,10,3,1,4,2,5
+Output:
+6
+Input:
+45,91,90,92,46
+Output:
+47
+Input:
+0,1,2,4,5,6,7
+Output:
+3
+
+
+2. IPL Bowlers stats of every over how many runs he has given to opposite team, now find the maiden overs at the last of his stats.
+
+example:
+Input:
+20,0,19,5,0,3,10,0,2
+Output:
+20,19,5,3,10,2,0,0,0
+
+Input:
+3,0,0,1,0,5,0,6,0
+Output:
+3,1,5,6,0,0,0,0,0
+
+3. Assume that your are part of support team in IRCTC app where customers would raise issue and it will be considered priority ticket such as 0, 1 and 2. now today tickets are in the bucket and you need to arrange it by priority
+Example:
+Input:
+2,0,0,1,0,2,0,1
+Output:
+0,0,0,0,1,1,2,2
+
+Day 3:
+1. Find and apply charges of 20 each extra debit more than 3 in last 10 transaction of your account which has credit and debit combination
+
+Example:
+Input:
+900,1200,5600,120,450,670,100,10000,400,120
+Output:
+900,1200,5600,120,450,670,100,10000,400,100
+
+2. Given an array nums of positive integers of size N. Find all distinct digits present in nums.
+Example 1:
+Input: nums = [131, 11, 48]
+Output: 1 3 4 8
+Explanation: 1, 3, 4, and 8 are only distinct
+digits that can be extracted from the numbers
+of the array.
+Example 2:
+Input: nums = [111, 222, 333, 4444, 666]
+Output: 1 2 3 4 6
+Explanation: 1, 2, 3, 4, and 6 are only distinct
+digits that can be extracted from the numbers
+of the array.
+
+3. Equilibrium index:
+Example:
+Input:
+-7, 1, 5, 2, -4, 3, 0
+Output:
+3
+Input:
+0,-3,5,-4,-2,3,1,0
+Output:
+0
+
+4. Rotating clock wise and anti clock wise
+
+example:
+[111, 222, 333, 4444, 666]
+2
+clock:
+[4444, 666, 111, 222, 333]
+anticlock:
+[333, 4444, 666, 111, 222]
+
+
+Day 4:
+1. Given an array arr[] of positive integers. Your task is to sort them so that the first part of the array contains odd numbers sorted in descending order, and the rest of the portion contains even numbers sorted in ascending order.
+Examples:
+Input: arr[] = [1, 2, 3, 5, 4, 7, 10]
+Output: [7, 5, 3, 1, 2, 4, 10]
+Explanation: 7 5 3 1 are odds in descending order and 2 4 10 are evens in ascending order.
+Input: arr[] = [0, 4, 5, 3, 7, 2, 1]
+Output: [7, 5, 3, 1, 0, 2, 4]
+Explanation: 7 5 3 1 are odds in descending order and 0 2 4 are evens in ascending order.
+
+2. Assume that grocery shop generating bills with different amount, now the shopkeeper wants to cumulate the bills. so help him to find total revenue by using recursion
+Example:
+Input:
+[900,20,450,210,60]
+Output:
+1640
+
+3. Find Max in array using recursion
+Example:
+Input: 0, 4, 5, 3, 7, 2, 1
+Output: 7
+
+4. Find Factorial using recursion
+Example:
+Input: 5 
+Output: 120
+
+5. Find Occurrence of number in array using recursion
+Example: 
+Input: 0, 1, 5, 0, 7, 2, 1
+Output: 1 >> 2 times, 0 >> 2 times
+
+Day 5:
+1. This is one of the most popular coding problems which can be solved using the Dynamic Programming technique. In this problem we gonna find via recursion i.e divide and conquer, you are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. The question is, in how many distinct ways can you climb to the top?
+Note: Given n will be a positive integer.
+
+Example 1:
+Input: 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+
+Example 2:
+Input: 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step.
+
+Example 3:
+Input: 5
+Output: 8
+
+2. Using recursion find prefix and postfix sum
+Input:
+23,12,98,45,18,45,12,98
+Output:
+Prefix Sum: [23, 35, 133, 178, 196, 241, 253, 351]                         
+Postfix Sum: [351, 328, 316, 218, 173, 155, 110, 98]
+
+3. merge sort
+
+
+4. using recursion find inversion count
+Using recursion find the inversion of count
+You are working for an e-commerce company that deals with a large volume of customer orders. The company wants to optimize its warehouse operations by analyzing the efficiency of order processing.
+The goal is to count the number of inversion pairs in the order processing times to identify potential inefficiencies. An inversion pair in this context is defined as a situation where a later order (in terms of processing sequence) took less time to process than an earlier order. By identifying these inversions, you can pinpoint areas where the warehouse team may need to improve their workflow or processes.
+Input
+An array P[] of n integers representing the processing times of orders, in the order they were processed.
+Output
+The count of inversion pairs in the array.
+
+Example
+Input:
+P[] = [30, 45, 25, 60, 20]
+Output:
+The inversion count is 6
+Explanation: There are 5 inversion pairs in the array:
+(45, 25) where 45 > 25 and 
+(45, 20) where 45 > 20 and 
+(30, 25) where 30 > 25 and 
+(30, 20) where 30 > 20 and 
+(60, 20) where 60 > 20 and 
+(25, 20) where 25 > 20
+
+day 6:
+1. Find the ranking of your skill set in google trends ranking of 10 demanded trends such as [Java developer, cloud architect, data analyst, devops engineer ,full stack developer, network associate] using binary search
+Example:
+Input: data analyst
+Output: 3
+Input: Devops engineer
+Output: -1
+Input: full stack developer
+Output: 5
+
+2. Given two strings A and B, find if A is a subsequence of B.
+Example 1:
+Input:
+A = TCS
+B = Tata Service
+Output: 0
+Explanation: A is not a subsequence of B
+as 'C' appears after 'S'
+
+Example 2:
+Input:
+A = sdm
+B = sridharmashthlamanjunath
+Output: 1
+Explanation: A is a subsequence of B.
+
+Example 3:
+Input:
+A = sdmit
+B = sridharmashthlainstitute
+Output: 0
+Explanation: A is not a subsequence of B.
+
+3. Minimum Moves to Convert String
+You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+Example 1:
+Input: s = "XXX"
+Output: 1	
+Explanation: XXX -> OOO
+We select all the 3 characters and convert them in one move.
+Example 2:
+Input: s = "XXOX"
+Output: 2
+Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+Example 3:
+Input: s = "OOOO"
+Output: 0
+Explanation: There are no 'X's in s to convert.
+
+4. Twisted prime
+Note: A number is called Twisted Prime if it is a prime and its reverse is also a prime.
+Example 1:
+Input: N = 97
+Output: 1
+Explanation: 97 is a prime number. Its 
+reverse 79 is also a prime number. Thus 
+97 is a  twisted Prime and so, the answer is 1.
+Example 2:
+Input: N = 43
+Output: 0
+Explanation: 43 is a prime number but its 
+reverse 34 is not a prime.So, 43 is not a 
+twisted prime and thus, answer is 0.
+
+
+day 7:
+1. Consider the following array is account balance of last 7 transactions, find the period of time (subSum) where the max amount kept in the account.
+(max sub array where sum is max)
+eg:
+Input: 2, -4, 1, 9, -6, 7, -3
+output: 11
+Input: 2, -4, 1, 9, -6, -3
+Output: 10
+0   1   2  3   4  5  6
+2, -4, 1, 9, -6, 7, -3
+
+0  1 2 3
+2,-4,1,9
+0   1
+2, -4
+ls>>2, rs>>-4, cs>>-2
+
+2,3
+1,9
+ls>>1, rs>>9, cs>> 10
+
+backtrack:
+0 to 3
+0 1  2 3  >> s>>0,m>>1,e>>3
+2,-4,1,9
+
+ls>>m to s >> total>=ls >> ls=total
+       1 to 0  >> -2    >> ls
+rs>> m+1 to e >> total>rs >> rs=total
+	2 to 3 >> 10   >> rs
+cs >> -2+10>> 8
+
+
+divide
+4, 5, 6
+-6,7,-3
+
+4, 5
+-6,7
+
+ls>>-6, rs>>7, cs>>1
+
+backtrack:
+4 to 6
+
+4, 5, 6
+-6,7,-3
+
+ls>>m to s >> total>=ls >> ls=total
+       5 to 4 >> 1>>ls
+rs>> m+1 to e >> total>rs >> rs=total
+	6		>> -3
+cs>> -2
+
+backtrack:
+0 to 6
+
+ls>>m to s >> total>=ls >> ls=total
+       3  to 0  >> 10>> ls
+rs>> m+1 to e >> total>rs >> rs=total
+        4     to 6 >> 1>>rs
+
+cs>> 11
+
+2. You are working on a vending machine software that dispenses change. Given an unlimited supply of currencies of different denominations (e.g., 100, 200, 500 etc.), you need to write a program to determine the minimum number of currencies required to make a given amount x. The program should accept the amount x and the list of denominations as input and output the minimum number of coins needed.
+Input
+coins = [100, 200, 500]  , amount = 1100
+Output
+3
+amount = 8700
+Output:
+18
+
+
+day 8:
+
+dynamic programming:
+additional space always required
+
+1. Climbing stairs using dynamic programming
+eg:
+5
+
+arr>> size = 6>> 0 to 5(always answer)
+
+2. factorial via DP
+3. coin change via DP
+
+
+day 9:
+1. Imagine you are a software engineer working on a document editing application. The application allows users to edit and correct typos in their documents. One of the features you are developing is a tool to calculate the minimum number of operations required to transform one word into another. This feature is crucial for suggesting the most efficient edits and corrections to the users.
+Task: Given two words, implement a function that calculates the minimum number of operations required to convert the first word into the second word. The allowed operations are:
+Insert a character
+Delete a character
+Replace a character
+
+Input:
+Two strings word1 and word2 representing the original word and the target word, respectively.
+Output:
+An integer representing the minimum number of operations required to convert word1 into word2.
+
+Example:
+Input: word1 = "horse", word2 = "rose"
+Output: 2
+Explanation:
+To transform "horse" into "rose", the following 2 operations are required:
+  1. Replace 'h' with 'r' -> "rorse"
+  2. Delete 'r' -> "rose"
+
+horse
+ros
+h>> remove
+o>> r
+r>> o
+e>> remove
+
+h>> r
+r>> remove
+e>> remove
+
+2. selection sort
+3. quick sort
+4. Given an array of stock prices where each element represents the stock price on a specific day, write a function to find the best days to buy and sell the stock such that you achieve the maximum profit. You can only buy and sell the stock once.
+45, 12, 3, 10, 50
+Best time to buy 3 best time to sell 50
+
+-10, -5, -2, -1, 1
+Best time to buy -10 best time to sell 1
+
+90, 40, 20, 10, 4
+Best time to buy 10 best time to sell 4
+
+day 10:
+1. Consider you are going to inquire about top kth package from placement history of past year companies offered. NOTE: using quick select
+Example:
+Input:[14, 23, 7, 15, 20]
+k = 2
+Output:20
+k = 1
+Output: 23
+k = 5
+Output: 7
+
+2. Consider that you are building console interface of customer's loan application where customer used to provide name, pan, aadhaar, email then they will set the password for their account. your role is to validate those information's using regex.
+Example:
+Input:
+Name: "Raz",
+Password: "razak$123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Account created
+
+Example:
+Input:
+Name: "Ra",
+Password: "razak$123",
+Aadhaar: "7654567",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Invalid name,invalid aadhaar
+
+Example:
+Input:
+Name: "Raz",
+Password: "razak123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.c"
+
+Output:
+Invalid password, invalid email
+
+3. Top K Frequent Elements
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
+Input: nums = [1], k = 1
+Output: [1]
+
+Input: nums = [4,4,4,6,6,6,6,3,3,3,3,3], k = 2
+Output: [3,6]
+
+Input: nums = [7,7,7,8,8,9,9,9,10,10,10,10], k = 3
+Output: [7,10,9]
+
+Input: nums = [5,5,6,7,7,7,8,8,8,8,9], k = 4
+Output: [8,7,5,9]
+
+day 11:
+1. Two Sum II - Input Array Is Sorted
+Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length.
+
+Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2.
+
+NOTE: index 1...N
+
+Your solution must use only constant extra space.
+Example 1:
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. 
+We return [1, 2].
+
+Example 2:
+Input: numbers = [2,3,4], target = 6
+Output: [1,3]
+Explanation: The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. 
+We return [1, 3].
+
+Example 3:
+Input: numbers = [-1,0], target = -1
+Output: [1,2]
+Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. 
+We return [1, 2].
+
+Sliding Window:
+fixed window size
+variable window size
+
+moving window:
+right side extends
+left side shrink
+
+2. Finding the maximum or minimum sum of a subarray of a fixed length.
+Input:
+arr = 1, 2, 3, 4, 5, 6, 7, 8, 9
+k = 3
+Output:
+24
+
+3.  Sliding Window Maximum
+Heart Rate Monitoring in Healthcare:
+A wearable health device monitors a user's heart rate during exercise. To provide health insights, the device must track the highest heart rate over every 1-minute interval.
+Problem Statement: Given an array heartRates[] and an integer k, find the maximum heart rate for each sliding window of size k.
+Input1:
+heartRates = [72, 80, 75, 90, 85, 92, 88]
+k = 3
+Output1:
+Maximum heart rates for each sliding window:
+[80, 90, 90, 92, 92]
+
+heartRates = [70, 85, 60, 95, 82, 74, 90]
+k = 2
+Maximum heart rates for each sliding window:
+[85, 85, 95, 95, 82, 90]
+Window [70, 85] → max = 85
+Window [85, 60] → max = 85
+Window [60, 95] → max = 95
+Window [95, 82] → max = 95
+Window [82, 74] → max = 82
+Window [74, 90] → max = 90
